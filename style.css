@@ -1,0 +1,64 @@
+.clock {
+    width: 300px;
+    height: 300px;
+    background: url("./clock.png");
+    background-size: contain;
+    position: relative;
+    margin: auto;
+}
+
+.hour-hand {
+    width: 5px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: calc(49.5% - 50px);
+    left: 49.5%;
+    z-index: 2;
+    transform-origin: 50% bottom;
+}
+
+.minute-hand {
+    width: 3px;
+    height: 100px;
+    background-color: darkred;
+    position: absolute;
+    top: calc(49.5% - 100px);
+    left: 49.5%;
+    transform-origin: 50% bottom;
+}
+
+label {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+input, button {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+button {
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wrapper {
+    margin: 10px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
