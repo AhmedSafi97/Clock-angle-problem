@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock angle problem</title>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="hour-hand" id="hourHand"></div>
+      <div class="minute-hand" id="minuteHand"></div>
+    </div>
+    <div class="wrapper">
+      <label for="hour">hour:</label>
+      <input type="number" min="1" value="12" id="hour" />
+      <label for="minute">minute:</label>
+      <input type="number" min="0" value="0" id="minute" />
+      <button type="button" id="goBtn">calculate angle</button>
+    </div>
+    <p id="angleBetween">
+      the measure of the smaller angle formed by the hands of the clock is: 0
+    </p>
+  </body>
+</html>
